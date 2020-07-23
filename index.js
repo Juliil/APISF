@@ -9,7 +9,7 @@ app.set('view engine', 'ejs');
 //configuração do multer para armazenamento
 const storage = multer.diskStorage({
     destination: function(req, file, cb){
-        cb(null,"apisfbml.herokuapp.comuploads/");
+        cb(null,"https://apisfbml.herokuapp.com/uploads/");
     },
     filename: function(req, file, cb){
         cb(null, file.originalname);
@@ -18,16 +18,16 @@ const storage = multer.diskStorage({
 const upload = multer({storage})
 
 //endpoints de consumo
-app.use("apisfbml.herokuapp.com/uploads", express.static(__dirname + 'apisfbml.herokuapp.com/uploads'));
-app.use('apisfbml.herokuapp.com/uploads', serveIndex(__dirname + 'apisfbml.herokuapp.com/uploads'));
+app.use("https://apisfbml.herokuapp.com/uploads", express.static(__dirname + 'https://apisfbml.herokuapp.com/uploads'));
+app.use('https://apisfbml.herokuapp.com/uploads', serveIndex(__dirname + 'https://apisfbml.herokuapp.com/uploads'));
 
 //Requisição da view
-app.get("apisfbml.herokuapp.com/", (req, res) => {
+app.get("https://apisfbml.herokuapp.com/", (req, res) => {
     res.render("index");
 })
 
 //Envio de arquivos
-app.post("apisfbml.herokuapp.com/upload", upload.single("file"), (req, res) =>{
+app.post("https://apisfbml.herokuapp.com/upload", upload.single("file"), (req, res) =>{
     res.send("Arquivo Enviado com sucesso!");
 })
 
