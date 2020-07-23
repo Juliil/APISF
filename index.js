@@ -13,7 +13,6 @@ const storage = multer.diskStorage({
         cb(null, file.originalname);
     }
 })
-
 const upload = multer({storage})
 
 app.use("/uploads", express.static(__dirname + '/uploads'));
