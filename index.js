@@ -32,6 +32,6 @@ app.post("https://apisfbml.herokuapp.com/upload", upload.single("file"), (req, r
 })
 
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 8080, () => {
     console.log("servidor rodando!");
 })
