@@ -6,8 +6,6 @@ A web api foi desenvolvida em NodeJS pelo framework Express com visando atingir 
 
 *Sobre o Desenvolvimento*
 
-O desenvolvimento consiste em pequenos passos:
-
 - [X] instalação das dependências
 * Instalação do express no projeto 
 ```npm install express --save```
