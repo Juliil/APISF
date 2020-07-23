@@ -1,6 +1,7 @@
 const express =  require("express");
 const app = express();
 const multer = require("multer");
+const serveIndex = require("serve-index")
 
 app.set('view engine', 'ejs');
 
@@ -16,7 +17,7 @@ const storage = multer.diskStorage({
 const upload = multer({storage})
 
 app.use("/uploads", express.static(__dirname + '/uploads'));
-
+app.use('/uploads', serveIndex(__dirname + '/uploads'));
 
 app.get("/", (req, res) => {
     res.render("index");
