@@ -10,7 +10,7 @@ A web api foi desenvolvida em NodeJS pelo framework Express com visando atingir 
 - [x] ServerIndex lib
  
 
-*Sobre o Desenvolvimento*
+# Sobre o Desenvolvimento
 
 - [X] instalação das dependências
 * Instalação do express no projeto 
