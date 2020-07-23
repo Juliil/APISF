@@ -5,6 +5,7 @@
 A web api foi desenvolvida em NodeJS pelo framework Express com visando atingir o objetivo de entregar o conteúdo de arquivos locais nos formatos _txt_ | _csv_ | _xlsx_ | _html_ para externos que consumissem a API.
 
 *Sobre o Desenvolvimento*
+
 O desenvolvimento consiste em pequenos passos:
 
 - [X] instalação das dependências
