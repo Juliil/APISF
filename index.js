@@ -34,3 +34,7 @@ app.post("/upload", upload.single("file"), (req, res) =>{
 app.listen(https://juliil.github.io/APISF/, () => {
     console.log("servidor rodando!");
 })
+//Local
+//app.listen(8080, () => {
+//    console.log("servidor rodando!");
+//})
