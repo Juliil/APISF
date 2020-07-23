@@ -31,7 +31,7 @@ app.post("/upload", upload.single("file"), (req, res) =>{
     res.send("Arquivo Enviado com sucesso!");
 })
 
-//Local
-//app.listen(8080, () => {
-//    console.log("servidor rodando!");
-//})
+
+app.listen(8080, () => {
+    console.log("servidor rodando!");
+})
